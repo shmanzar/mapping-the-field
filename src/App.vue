@@ -2,7 +2,7 @@
 
  <div class="common-layout">
         <el-container>
-          <el-header><h2>New York City Restaurants and the Pandemic | Mapping the Field</h2>
+          <el-header>New York City Restaurants and the Pandemic | Mapping the Field
           </el-header>
           <el-divider></el-divider>
           <div class = 'maps'>
@@ -58,6 +58,7 @@ export default {
 </script>
 
 <style>
+body { margin: 0; padding: 0; }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

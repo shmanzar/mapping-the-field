@@ -11,7 +11,8 @@ export default {
 name: 'MapboxMap',
 data() {
 return {
-  mb: null
+  mb: null,
+  marker1: null
 
 }
 },
@@ -45,13 +46,14 @@ return [
     ]
   ]
 ]
-}
+},
 
 },
 methods: {
 setColorVar() {
 this.mb.setPaintProperty('countries', 'fill-color', this.mapboxFillColorSpec)
-}
+},
+
 },
 
 mounted() {
@@ -68,6 +70,27 @@ this.mb = new mapboxgl.Map({
     [-73.656464,40.947232],
   ],
 });
+// Create a default Marker and add it to the map.
+this.marker1 = new mapboxgl.Marker()
+.setLngLat([-74.005966, 40.674129])
+.addTo(this.mb);
+
+
+  document.querySelector('.btn').addEventListener('click', () => {
+
+this.mb.flyTo({
+// These options control the ending camera position: centered at
+// the target, at zoom level 9, and north up.
+center: [-74.005966, 40.674129],
+zoom: 16,
+bearing: 0,
+
+// this animation is considered essential with respect to prefers-reduced-motion
+essential: true
+});
+});
+
+
 
 // this.mb.on('load', () => {
 //   this.mb.addSource("countryPaths", {
