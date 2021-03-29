@@ -29,7 +29,7 @@
                 </el-button>
               </div>
               <div class="btn-gv">
-                <el-button type="primary" @click="startHacking">
+                <el-button type="primary" @click="playNote()">
                   Greenwich Village example
                 </el-button>
               </div>
@@ -48,6 +48,8 @@ import { ref } from 'vue'
 // import HelloWorld from './components/HelloWorld.vue'
 import MapboxMap from './components/MapboxMap.vue';
 import ImageCompare from "image-compare-viewer";
+
+const someSound = require('./assets/audio/210319_2034.mp3');
 
 
 export default {
@@ -73,8 +75,29 @@ export default {
   // const viewer = new ImageCompare(element).mount();
   const viewer = new ImageCompare(element);
   viewer.mount()
+  },
+  methods: {
+    playNote() {
+      console.log("calling playNote()");
+      let note = new Audio(someSound);
+
+      note.addEventListener("canplaythrough", () => {
+        console.log("event listener called");
+        note.play();
+      });
+    },
+    pauseNote() {
+      console.log("calling pauseNote()");
+      let note = new Audio(someSound);
+
+      note.addEventListener("canplaythrough", () => {
+        console.log("event listener called");
+        note.pause();
+      });
+    }
   }
-}
+    }
+
 </script>
 
 <style>
