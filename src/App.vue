@@ -5,6 +5,7 @@
           <el-header>New York City Restaurants and the Pandemic | Mapping the Field
           </el-header>
           <el-divider></el-divider>
+          <el-main>
           <div class = 'maps'>
 <el-card>
 <!-- <h2>Map goes here</h2> -->
@@ -18,13 +19,21 @@
   </el-card>
 </div>
             <!-- <img class="logo" alt="Vue logo" src="./assets/logo.png"> -->
-  <HelloWorld :msg="msg"/>
-  <div class="btn">
-    <el-button type="primary" @click="startHacking">
-      Get Started
-    </el-button>
-  </div>
-          <el-main>Main</el-main>
+            <div class ='button-switcher'>
+              <div class="btn-br">
+                <el-button type="primary" @click="startHacking">
+                  Bay Ridge example
+                </el-button>
+              </div>
+              <div class="btn-gv">
+                <el-button type="primary" @click="startHacking">
+                  Greenwich Village example
+                </el-button>
+              </div>
+            </div>
+            <HelloWorld :msg="msg"/>
+          </el-main>
+          <el-footer>t</el-footer>
         </el-container>
 
 
@@ -78,8 +87,13 @@ body { margin: 0; padding: 0; }
     display: flex;
     justify-content: space-around;
   }
+  .button-switcher {
+    display: flex;
+    justify-content: space-around;
+
+  }
 .btn {
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 .el-header, .el-footer {
     background-color: #B3C0D1;
@@ -96,7 +110,7 @@ body { margin: 0; padding: 0; }
   }
 
   .el-main {
-    background-color: #E9EEF3;
+    /* background-color: #E9EEF3; */
     color: #333;
     text-align: center;
     line-height: 160px;

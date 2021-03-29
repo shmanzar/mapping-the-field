@@ -76,12 +76,26 @@ this.marker1 = new mapboxgl.Marker()
 .addTo(this.mb);
 
 
-  document.querySelector('.btn').addEventListener('click', () => {
+document.querySelector('.btn-br').addEventListener('click', () => {
 
 this.mb.flyTo({
 // These options control the ending camera position: centered at
 // the target, at zoom level 9, and north up.
 center: [-74.005966, 40.674129],
+zoom: 16,
+bearing: 0,
+
+// this animation is considered essential with respect to prefers-reduced-motion
+essential: true
+});
+});
+
+document.querySelector('.btn-gv').addEventListener('click', () => {
+
+this.mb.flyTo({
+// These options control the ending camera position: centered at
+// the target, at zoom level 9, and north up.
+center: [-74.305966, 40.674129],
 zoom: 16,
 bearing: 0,
 
