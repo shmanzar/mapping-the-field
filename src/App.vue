@@ -1,10 +1,23 @@
 <template>
 
-      <div class="common-layout">
+ <div class="common-layout">
         <el-container>
-          <el-header>New York City Restaurants and the Pandemic | Mapping the Field
+          <el-header><h2>New York City Restaurants and the Pandemic | Mapping the Field</h2>
           </el-header>
-            <img class="logo" alt="Vue logo" src="./assets/logo.png">
+          <el-divider></el-divider>
+          <div class = 'maps'>
+<el-card>
+<!-- <h2>Map goes here</h2> -->
+
+  <MapboxMap />
+
+</el-card>
+<el-card>
+  <h2>Stats goes here</h2>
+  
+  </el-card>
+</div>
+            <!-- <img class="logo" alt="Vue logo" src="./assets/logo.png"> -->
   <HelloWorld :msg="msg"/>
   <div class="btn">
     <el-button type="primary" @click="startHacking">
@@ -14,63 +27,22 @@
           <el-main>Main</el-main>
         </el-container>
 
-        <el-container>
-          <el-header>Header</el-header>
-          <el-main>Main</el-main>
-          <el-footer>Footer</el-footer>
-        </el-container>
 
-        <el-container>
-          <el-aside width="200px">Aside</el-aside>
-          <el-main>Main</el-main>
-        </el-container>
-
-        <el-container>
-          <el-header>Header</el-header>
-          <el-container>
-            <el-aside width="200px">Aside</el-aside>
-            <el-main>Main</el-main>
-          </el-container>
-        </el-container>
-
-        <el-container>
-          <el-header>Header</el-header>
-          <el-container>
-            <el-aside width="200px">Aside</el-aside>
-            <el-container>
-              <el-main>Main</el-main>
-              <el-footer>Footer</el-footer>
-            </el-container>
-          </el-container>
-        </el-container>
-
-        <el-container>
-          <el-aside width="200px">Aside</el-aside>
-          <el-container>
-            <el-header>Header</el-header>
-            <el-main>Main</el-main>
-          </el-container>
-        </el-container>
-
-        <el-container>
-          <el-aside width="200px">Aside</el-aside>
-          <el-container>
-            <el-header>Header</el-header>
-            <el-main>Main</el-main>
-            <el-footer>Footer</el-footer>
-          </el-container>
-        </el-container>
       </div>
 </template>
 
 <script>
 import { ref } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
+import MapboxMap from './components/MapboxMap.vue';
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    MapboxMap
+
   },
   setup() {
     const msg = ref("Welcome to Element Plus, a Vue 3.0 based component library")
@@ -94,9 +66,17 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+#mapbox-container {
+    height: 500px;
+    width: 400px;
+  }
 .logo {
   width: 50%;
 }
+.maps {
+    display: flex;
+    justify-content: space-around;
+  }
 .btn {
   margin-top: 100px;
 }
