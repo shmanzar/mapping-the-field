@@ -14,7 +14,10 @@
 
 </el-card>
 <el-card>
-  <h2>Stats goes here</h2>
+  <div id = "image-compare">
+    <img src="./assets/photos/elcantinero_before.jpg" alt=""/>
+    <img src="./assets/photos/elcantinero.jpg" alt=""/>
+  </div>
   
   </el-card>
 </div>
@@ -31,9 +34,9 @@
                 </el-button>
               </div>
             </div>
-            <HelloWorld :msg="msg"/>
+            <!-- <HelloWorld :msg="msg"/> -->
           </el-main>
-          <el-footer>t</el-footer>
+          <el-footer>timeline/sounds control</el-footer>
         </el-container>
 
 
@@ -42,14 +45,15 @@
 
 <script>
 import { ref } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 import MapboxMap from './components/MapboxMap.vue';
+import ImageCompare from "image-compare-viewer";
 
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    // HelloWorld,
     MapboxMap
 
   },
@@ -62,6 +66,13 @@ export default {
       msg,
       startHacking
     }
+  },
+  mounted() {
+    const element = document.getElementById("image-compare");
+  
+  // const viewer = new ImageCompare(element).mount();
+  const viewer = new ImageCompare(element);
+  viewer.mount()
   }
 }
 </script>
@@ -79,6 +90,10 @@ body { margin: 0; padding: 0; }
 #mapbox-container {
     height: 500px;
     width: 400px;
+  }
+  #image-compare {
+    height: 500px;
+    width: 800px;
   }
 .logo {
   width: 50%;

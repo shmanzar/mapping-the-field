@@ -12,7 +12,8 @@ name: 'MapboxMap',
 data() {
 return {
   mb: null,
-  marker1: null
+  marker1: null,
+  marker2: null
 
 }
 },
@@ -72,16 +73,19 @@ this.mb = new mapboxgl.Map({
 });
 // Create a default Marker and add it to the map.
 this.marker1 = new mapboxgl.Marker()
-.setLngLat([-74.005966, 40.674129])
+.setLngLat([-74.02504943180675, 40.63651311677057])
 .addTo(this.mb);
 
+this.marker2 = new mapboxgl.Marker()
+.setLngLat([-73.9932981, 40.7336716])
+.addTo(this.mb);
 
 document.querySelector('.btn-br').addEventListener('click', () => {
 
 this.mb.flyTo({
 // These options control the ending camera position: centered at
 // the target, at zoom level 9, and north up.
-center: [-74.005966, 40.674129],
+center: [-74.02504943180675, 40.63651311677057],
 zoom: 16,
 bearing: 0,
 
@@ -95,7 +99,7 @@ document.querySelector('.btn-gv').addEventListener('click', () => {
 this.mb.flyTo({
 // These options control the ending camera position: centered at
 // the target, at zoom level 9, and north up.
-center: [-74.305966, 40.674129],
+center: [-73.9932981, 40.7336716],
 zoom: 16,
 bearing: 0,
 
