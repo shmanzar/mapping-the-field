@@ -15,8 +15,8 @@
 </el-card>
 <el-card>
   <div id = "image-compare">
-    <img src="./assets/photos/elcantinero_before.jpg" alt=""/>
-    <img src="./assets/photos/elcantinero.jpg" alt=""/>
+    <img src="./assets/photos/open-streets-sunset_before.png" alt=""/>
+    <img src="./assets/photos/open-streets-sunset.png" alt=""/>
   </div>
   
   </el-card>
