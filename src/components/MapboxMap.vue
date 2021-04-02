@@ -63,7 +63,7 @@ mapboxgl.accessToken = process.env.VUE_APP_MAPBOX_TOKEN;
 
 this.mb = new mapboxgl.Map({
   container: "mapbox-container",
-  style: "mapbox://styles/mapbox/streets-v11",
+  style: "mapbox://styles/smanzar/cki6j8dxf3o2p19trqspv7hoh",
   center: [-74.005966, 40.674129],
   zoom: 9,
   maxBounds: [
