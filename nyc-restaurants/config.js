@@ -11,7 +11,7 @@ var config = {
   chapters: [
     {
       id: "hero",
-      image: "/images/hero-title.png",
+      image: "./images/hero-title.png",
       location: {
         center: [-73.962, 40.694],
         zoom: 10.5,
@@ -58,7 +58,7 @@ var config = {
     },
     {
       id: "hero-sub",
-      image: "/images/hero-subtitle.png",
+      image: "./images/hero-subtitle.png",
       location: {
         center: [-73.962, 40.694],
         zoom: 10.5,
