@@ -1,0 +1,31 @@
+body {
+  background-color: oldlace;
+  margin: 0;
+}
+
+div.tooltip {
+  position: absolute;
+  padding: 10px;
+  font: 12px sans-serif;
+  background: white;
+  border: 1px;
+  border-radius: 3px;
+  pointer-events: none;
+  border-style: solid;
+}
+
+.line {
+  fill: none;
+  stroke: orange;
+  stroke-width: 2px;
+}
+
+.area {
+  /* fill: rgba(255, 184, 143, 0.911); */
+  fill: url(#area-gradient);
+}
+
+.text-marker {
+  font-family: Helvetica, sans-serif;
+  font-size: small;
+}
