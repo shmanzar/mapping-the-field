@@ -224,10 +224,12 @@ var config = {
       id: "bqe",
       // title: "Sunset Park",
       alignment: "left",
-
+      image: "./images/photos/open-streets-sunset_before.png",
       description: ` <span style='font-weight: bold; color: #3669d6'
         >12%</span> of all Sunset Park's residents worked in the food service industry. Compare that to <span style='font-weight: bold; color: #83c6e3'
-        >3.5% </span>in neighbouring Park Slope`,
+        >3.5% </span>in neighbouring Park Slope
+        <p><img src="./images/photos/open-streets-sunset.png" width="200px" height="250px">
+        </p>`,
       location: {
         center: [-74.00773, 40.64842],
         zoom: 13,
@@ -657,7 +659,9 @@ var config = {
 
       // image: "./path/to/image/source.png",
       description: `Not coincidentally, these are the same neighbourhoods with the highest rates of COVID-19 cases; with Jackson Heights having had <span style='font-weight: bold; color: #cd1919'
-      >11,800</span> per 100,000 cases`,
+      >11,800</span> per 100,000 cases <p class= 'legend-text'> <span style='font-weight: bold; color: #cd1919'
+      >High</span> vs <span style='font-weight: bold; color: grey'
+      >low</span> rates of cases </p>`,
       location: {
         center: [-73.846149, 40.748883],
         zoom: 11,
@@ -709,7 +713,9 @@ var config = {
       alignment: "left",
 
       // image: "./path/to/image/source.png",
-      description: `When the help came, the same inequities remained`,
+      description: `When the help came, the same inequities remained <p class= 'legend-text'> <span style='font-weight: bold; color: #018901'
+      >High</span> loan disbursement vs <span style='font-weight: bold; color: #d9f8d9'
+      >low</span> loan disbursement</p>`,
       location: {
         center: [-73.99664, 40.67983],
         zoom: 10,
