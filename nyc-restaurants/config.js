@@ -7,7 +7,8 @@ var config = {
   // title: "86'ed",
   // subtitle: "NYC restaurants during the pandemic",
   // byline: "Sherry Manzar",
-  footer: "Source: ACS 2014-2019, NYC Open Data. Eater/Curbed, NYC DoH, ",
+  footer:
+    "Source: ACS 2014-2019, NYC Open Data. Eater/Curbed, NYC DoH, Street View photos are from Google Maps while current photographs are mine ",
   chapters: [
     {
       id: "hero",
@@ -234,7 +235,7 @@ var config = {
         src="./sounds/210319_2034.mp3">
             Your browser does not support the
             <code>audio</code> element.
-    </audio><iframe frameborder="0" class="juxtapose" width="100%" height="400" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=dbe39720-aeec-11eb-b7bf-95443c729a29"></iframe>
+    </audio><iframe frameborder="0" class="juxtapose" width="100%" height="250" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=dbe39720-aeec-11eb-b7bf-95443c729a29"></iframe>
         </p> `,
       location: {
         center: [-74.00773, 40.64842],
@@ -297,7 +298,7 @@ var config = {
 
       // image: "./path/to/image/source.png",
       description: `At the same time, most households have relatively modest household income - around <span style='font-weight: bold; color: #bdfa92'
-        >$55,000 </span> <p> <iframe frameborder="0" class="juxtapose" width="100%" height="460" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=84b5d81e-aeec-11eb-b7bf-95443c729a29"></iframe></p>`,
+        >$55,000 </span> <p> <iframe frameborder="0" class="juxtapose" width="100%" height="250" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=84b5d81e-aeec-11eb-b7bf-95443c729a29"></iframe></p>`,
       location: {
         center: [-74.00773, 40.64842],
         zoom: 13,
