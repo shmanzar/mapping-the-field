@@ -298,7 +298,7 @@ var config = {
 
       // image: "./path/to/image/source.png",
       description: `At the same time, most households have relatively modest household income - around <span style='font-weight: bold; color: #bdfa92'
-        >$55,000 </span> <p> <iframe frameborder="0" class="juxtapose" width="100%" height="250" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=84b5d81e-aeec-11eb-b7bf-95443c729a29"></iframe></p>`,
+        >$55,000 </span> <p> <iframe frameborder="0" class="juxtapose" width="100%" height="250" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=93785c7a-aef4-11eb-b7bf-95443c729a29"></iframe></p>`,
       location: {
         center: [-74.00773, 40.64842],
         zoom: 13,
