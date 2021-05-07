@@ -223,18 +223,19 @@ var config = {
     {
       id: "bqe",
       // title: "Sunset Park",
+      //<img src="./images/photos/open-streets-sunset.png" width="200px" height="250px">
       alignment: "left",
-      image: "./images/photos/open-streets-sunset_before.png",
+      // image: "./images/photos/open-streets-sunset_before.png",
       description: ` <span style='font-weight: bold; color: #3669d6'
         >12%</span> of all Sunset Park's residents worked in the food service industry. Compare that to <span style='font-weight: bold; color: #83c6e3'
         >3.5% </span>in neighbouring Park Slope
-        <p><img src="./images/photos/open-streets-sunset.png" width="200px" height="250px">
-        </p> <p>    <audio
+        <p><audio
         controls
         src="./sounds/210319_2034.mp3">
             Your browser does not support the
             <code>audio</code> element.
-    </audio></p>`,
+    </audio><iframe frameborder="0" class="juxtapose" width="100%" height="400" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=dbe39720-aeec-11eb-b7bf-95443c729a29"></iframe>
+        </p> `,
       location: {
         center: [-74.00773, 40.64842],
         zoom: 13,
@@ -296,7 +297,7 @@ var config = {
 
       // image: "./path/to/image/source.png",
       description: `At the same time, most households have relatively modest household income - around <span style='font-weight: bold; color: #bdfa92'
-        >$55,000 </span>`,
+        >$55,000 </span> <p> <iframe frameborder="0" class="juxtapose" width="100%" height="460" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=84b5d81e-aeec-11eb-b7bf-95443c729a29"></iframe></p>`,
       location: {
         center: [-74.00773, 40.64842],
         zoom: 13,
