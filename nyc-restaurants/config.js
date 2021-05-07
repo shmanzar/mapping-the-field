@@ -229,7 +229,12 @@ var config = {
         >12%</span> of all Sunset Park's residents worked in the food service industry. Compare that to <span style='font-weight: bold; color: #83c6e3'
         >3.5% </span>in neighbouring Park Slope
         <p><img src="./images/photos/open-streets-sunset.png" width="200px" height="250px">
-        </p>`,
+        </p> <p>    <audio
+        controls
+        src="./sounds/210319_2034.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio></p>`,
       location: {
         center: [-74.00773, 40.64842],
         zoom: 13,
