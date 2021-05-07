@@ -1,7 +1,7 @@
 var config = {
   style: "mapbox://styles/smanzar/cknpkn8mj3em717p128ryzthw", // Update this with your own too
   accessToken:
-    "pk.eyJ1Ijoic21hbnphciIsImEiOiJja2k2ajRjaWowMXEyMnFxZ2IxbTRhaDkwIn0.bZyOlzap-1dfxKN_BHcCPw", // Update this with your github specific one
+    "pk.eyJ1Ijoic21hbnphciIsImEiOiJja29kbWMza2wwM3RxMnJxZzgxZnJsc3hlIn0.ckerqg7rLRdGx7-A06UNzA", // Update this with your github specific one
   showMarkers: false,
   // theme: "light",
   // title: "86'ed",
