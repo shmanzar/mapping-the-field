@@ -43,9 +43,9 @@ function workersPop() {
       .setHTML(
         "<h3>" +
           nyc_rest[0].properties.neighbourhood +
-          "</h3><p> <b> Restaurant workers:</b> " +
+          "</h3><p> <b> Restaurant worker residents (%):</b> " +
           nyc_rest[2].properties.share_of_workforce +
-          "</p><p><b>Immigrant workers:</b> " +
+          "</p><p><b>Immigrant restaurant workers (%):</b> " +
           nyc_rest[2].properties.sow_immigrants +
           "</p><p><b>Median household income: </b> " +
           formatter.format(nyc_rest[0].properties.median_income) +
