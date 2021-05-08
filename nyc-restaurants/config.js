@@ -918,7 +918,7 @@ var config = {
   </audio><iframe frameborder="0" class="juxtapose" width="100%" height="350" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=8713c744-aef4-11eb-b7bf-95443c729a29"></iframe>
       </p>`,
       location: {
-        center: [74.02713, 40.63253],
+        center: [-74.02713, 40.63253],
         zoom: 10,
         pitch: 0.0,
         bearing: 0.0,
@@ -983,8 +983,8 @@ var config = {
   </audio><iframe frameborder="0" class="juxtapose" width="100%" height="350" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=8713c744-aef4-11eb-b7bf-95443c729a29"></iframe>
       </p>`,
       location: {
-        center: [74.02713, 40.63253],
-        zoom: 10,
+        center: [-74.02713, 40.63253],
+        zoom: 14,
         pitch: 0.0,
         bearing: 0.0,
       },
@@ -1049,7 +1049,7 @@ var config = {
       </p>`,
       location: {
         center: [-74.02794, 40.63076],
-        zoom: 10,
+        zoom: 14,
         pitch: 0.0,
         bearing: 0.0,
       },
@@ -1114,8 +1114,8 @@ var config = {
   <iframe frameborder="0" class="juxtapose" width="100%" height="350" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=e81bd27c-afb5-11eb-b7bf-95443c729a29"></iframe>
       </p>`,
       location: {
-        center: [-74.02794, 40.63076],
-        zoom: 10,
+        center: [-74.03173, 40.62181],
+        zoom: 14,
         pitch: 0.0,
         bearing: 0.0,
       },
