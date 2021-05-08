@@ -839,5 +839,70 @@ var config = {
         },
       ],
     },
+    {
+      id: "br-1",
+      // title: "Queens",
+      alignment: "left",
+
+      // image: "./path/to/image/source.png",
+      description: `On a typical walk around Bay Ridge, one can hear and take in the sounds of an entire neighbourhood <p><audio
+      controls
+      src="./sounds/210319_2111.mp3">
+          Your browser does not support the
+          <code>audio</code> element.
+  </audio><iframe frameborder="0" class="juxtapose" width="100%" height="350" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=8713c744-aef4-11eb-b7bf-95443c729a29"></iframe>
+      </p>`,
+      location: {
+        center: [-74.02597, 40.63607],
+        zoom: 10,
+        pitch: 0.0,
+        bearing: 0.0,
+      },
+      callback: "workersPop",
+      onChapterEnter: [
+        {
+          layer: "loans-small",
+          opacity: 0,
+        },
+        {
+          layer: "cases-rate-heavy",
+          opacity: 0,
+        },
+        {
+          layer: "nyc-restaurant-immigrants-heavy",
+          opacity: 0,
+        },
+        {
+          layer: "nyc-restaurant-immigrants",
+          opacity: 0,
+        },
+        {
+          layer: "nyc-restaurant-business",
+          opacity: 0,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "loans-small",
+          opacity: 0,
+        },
+        {
+          layer: "cases-rate-heavy",
+          opacity: 0,
+        },
+        {
+          layer: "nyc-restaurant-immigrants-heavy",
+          opacity: 0,
+        },
+        {
+          layer: "nyc-restaurant-immigrants",
+          opacity: 0,
+        },
+        {
+          layer: "nyc-restaurant-business",
+          opacity: 0,
+        },
+      ],
+    },
   ],
 };
