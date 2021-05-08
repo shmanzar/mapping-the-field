@@ -854,7 +854,7 @@ var config = {
       </p>`,
       location: {
         center: [-74.02597, 40.63607],
-        zoom: 14,
+        zoom: 16,
         pitch: 0.0,
         bearing: 0.0,
       },
@@ -919,7 +919,7 @@ var config = {
       </p>`,
       location: {
         center: [-74.02713, 40.63253],
-        zoom: 10,
+        zoom: 16,
         pitch: 0.0,
         bearing: 0.0,
       },
@@ -984,7 +984,7 @@ var config = {
       </p>`,
       location: {
         center: [-74.02713, 40.63253],
-        zoom: 14,
+        zoom: 16,
         pitch: 0.0,
         bearing: 0.0,
       },
@@ -1044,11 +1044,11 @@ var config = {
       controls
       src="./sounds/210320_2215.mp3">
           Your browser does not support the
-          <code>audio</code> <iframe frameborder="0" class="juxtapose" width="100%" height="350" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=bfbd5ecd-afb7-11eb-b7bf-95443c729a29"></iframe>
+          <code>audio</code> <iframe frameborder="0" class="juxtapose" width="100%" height="300" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=bfbd5ecd-afb7-11eb-b7bf-95443c729a29"></iframe>
       </p>`,
       location: {
         center: [-74.02794, 40.63076],
-        zoom: 14,
+        zoom: 16,
         pitch: 0.0,
         bearing: 0.0,
       },
@@ -1114,7 +1114,7 @@ var config = {
       </p>`,
       location: {
         center: [-74.03173, 40.62181],
-        zoom: 14,
+        zoom: 16,
         pitch: 0.0,
         bearing: 0.0,
       },
